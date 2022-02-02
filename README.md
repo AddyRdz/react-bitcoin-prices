@@ -14,8 +14,8 @@ code .
 npm start
 ```
 
-## Up and Running! 
-
-This is what your browser window should look like when you start your application. 
+## Previews of How the App Should Look! 
 
 ![starter screen](https://git.generalassemb.ly/seir-1213/react-bitcoin-prices/blob/master/Screen%20Shot%202022-02-02%20at%209.41.13%20AM.png)
+![currency list](https://git.generalassemb.ly/seir-1213/react-bitcoin-prices/raw/master/Screen%20Shot%202022-02-02%20at%2010.17.44%20AM.png)
+![individual currency](https://git.generalassemb.ly/seir-1213/react-bitcoin-prices/blob/master/Screen%20Shot%202022-02-02%20at%2010.29.07%20AM.png)
