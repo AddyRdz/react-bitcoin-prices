@@ -1,18 +1,18 @@
-import "./Currencies.css";
-import listOfCurrencies from "./list.json";
+import "./Currencies.css"
+import listOfCurrencies from "./list.json"
 
 const Currencies = () => {
     let list = listOfCurrencies.map(item => {
       return (
-        <div className="currency" key={item.currency}>
+        <div className="currency" key={ item.currency }>
           <p>
-            <a href={"/price/" + item.currency}>{item.currency}</a>:{" "}
+            <a href={ "/price/" + item.currency }>{ item.currency }</a>:{" "}
             {item.country}
           </p>
         </div>
-      );
-    });
-    return <div>{list}</div>;
+      )
+    })
+    return <div>{ list }</div>
 }
 
-export default Currencies;
+export default Currencies

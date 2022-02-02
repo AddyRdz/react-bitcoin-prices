@@ -1,24 +1,28 @@
-import { useState } from "react";
-import Home from "../Home/Home";
-import "./App.css";
+import React, { useState } from "react"
+import { Route, Routes, Link } from "react-router-dom"
+import Home from "../Home/Home"
+import "./App.css"
 
-function App(){
-  const [price, setPrice] = useState()
-
+const App = () => {
+  const [ price, setPrice ] = useState()
     return (
       <div>
         <nav>
-          <img
-            src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png"
-            alt=""
-          />
-          <h1>Bitcoin prices</h1>
+          <Link to='/'>
+            <img
+              src='https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png'
+              alt=''
+            />
+            <h1>Bitcoin prices</h1>
+          </Link>
         </nav>
         <main>
-          <Home />
+          <Routes>
+            <Route path='/' element={ Home } />
+          </Routes>
         </main>
       </div>
-    );
+    )
 }
 
-export default App;
+export default App

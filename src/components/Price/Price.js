@@ -1,23 +1,23 @@
-import { useEffect } from 'react';
-import './Price.css';
+import { useEffect } from 'react'
+import './Price.css'
 
-const coindeskURL = 'https://api.coindesk.com/v1/bpi/currentprice/';
+const coindeskURL = 'https://api.coindesk.com/v1/bpi/currentprice/'
 
 const Price = ({ price, setPrice }) => {
-	const currency = '';
+	const currency = ''
 	useEffect(() => {
-		const url = `${coindeskURL}${currency}.json`;
+		const url = `${ coindeskURL }${ currency }.json`
 
 		fetch(url)
 			.then((res) => res.json())
 			.then((res) => {
-				let newPrice = res.bpi[currency].rate;
+				let newPrice = res.bpi[currency].rate
 				setPrice(newPrice);
 			})
 			.catch((err) => {
-				console.error(err);
-			});
-	}, []);
+				console.error(err)
+			})
+	}, [])
 
 	return (
 		<div>
