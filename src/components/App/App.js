@@ -20,8 +20,8 @@ const App = () => {
         </nav>
         <main>
           <Routes>
-            <Route path='/' element={ Home } />
-            <Route path='/currencies' element={ Currencies } />
+            <Route path='/' element={ <Home /> } />
+            <Route path='/currencies' element={ <Currencies /> } />
           </Routes>
         </main>
       </div>
