@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Route, Routes, Link } from "react-router-dom"
 import Home from "../Home/Home"
 import Currencies from '../Currencies/Currencies'
+import Price from '../Price/Price'
 import "./App.css"
 
 const App = () => {
@@ -20,8 +21,12 @@ const App = () => {
         </nav>
         <main>
           <Routes>
-            <Route path='/' element={ <Home /> } />
-            <Route path='/currencies' element={ <Currencies /> } />
+            <Route path='/' element={<Home />} />
+            <Route path='/currencies' element={<Currencies />} />
+            <Route
+              path='/price/:currency'
+              element={ <Price setPrice={ setPrice } price={ price } />}
+            />
           </Routes>
         </main>
       </div>
